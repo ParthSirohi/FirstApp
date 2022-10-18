@@ -1,0 +1,33 @@
+<div>
+    <label>Name</label>
+    <input type="'text" [value]="name" placeholder="Enter a Name";/>
+    <span style="color:red">{{name}}</span>
+    <br/>
+    <label>Role</label>
+    <input type="text" [(ngModel)]="role"  placeholder="Enter a Role"/>
+    <span style="color:red">{{role}}</span>
+    <br/>
+    <button (click) ="add(statusDiv)">Add</button>
+    <div #statusDiv>
+        {{status}}
+    </div>
+    <hr/>
+    <h3>Members Added</h3>
+    <table style="border-style:solid; border-width:1px">
+        <tr>
+            <td>Name</td>
+            <td>Role</td>
+        </tr>
+        <tr *ngFor="let person of pplarray">
+            <img [src]="person.dp"/>
+            <hr/>
+            <span>Name: {{person.Name}}</span>
+            <br/>
+            <!-- <td>{{person.name}}</td>
+            <td>{{person.role}}</td> -->
+            <span>Role:{{person.Role}</span>
+        </tr>
+    </table>
+
+
+</div>

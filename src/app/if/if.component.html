@@ -1,0 +1,13 @@
+<input type="checkbox" (click)="toggleImage()"/><span> Show Image</span>
+<div *ngIf="status ==true; then success else failed ">{{status}}</div>
+
+<ng-template #success>
+    <img src ="..assets/pic.png"/>
+    <h3> You are valid User</h3>
+
+</ng-template>
+
+<ng-template #failed>
+    <img src="..assets/welcome.png"/>
+    <h3>You are Intruder</h3>
+</ng-template>

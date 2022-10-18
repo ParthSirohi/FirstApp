@@ -1,0 +1,12 @@
+<p>use-http2 works!</p>
+<button (click)="ShowUsers()">Users</button>
+<ul>
+    <li *ngFor="let user of users">
+        <div style="background-color:blue;color:rgb(0, 225, 255)">{{user.email}}</div>
+        <div>{{user.body}}</div>
+        <div>{{user.id}}</div>
+        <div>{{user.phone}}</div>
+        <div>{{user.zipcode}}</div>
+        <hr/>
+    </li>
+</ul>

@@ -1,0 +1,14 @@
+<p>use-pipes works!</p>
+<h4>
+    Custom Pipe Reverse
+</h4>
+<p>{{"Parth"|reverse}}</p>
+<div>
+    <input type="text" [(ngModel)]="personName"/>
+    <span style="color:red">{{personName |reverse}</span>
+
+</div>
+<input type="'text" [(ngModel)]="searchTerm"/>
+<ul>
+    <!-- <li *ngFor="let p of ppl|searchPipe:searchTerm">{{p}}</li> -->
+</ul>
